@@ -1,0 +1,1 @@
+"""BaFin parser package."""

@@ -1,0 +1,280 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>SS04 - Verification Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --primary: #0f172a;
+        --secondary: #334155;
+        --accent: #2563eb;
+        --border: #e2e8f0;
+        --bg: #f8fafc;
+        --success: #16a34a;
+        --success-bg: #dcfce7;
+        --warning: #dc2626;
+        --warning-bg: #fee2e2;
+      }
+      body { 
+        font-family: 'Inter', sans-serif; 
+        margin: 0; 
+        padding: 40px; 
+        color: var(--primary);
+        background-color: #ffffff;
+      }
+      .header {
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .header-title {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+        color: var(--primary);
+      }
+      .header-subtitle {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        color: var(--secondary);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .document-id {
+        text-align: right;
+        font-size: 12px;
+        color: var(--secondary);
+      }
+      .g2rs-notice { 
+        font-size: 15px; 
+        font-weight: 600; 
+        border-radius: 8px;
+        padding: 16px 20px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .g2rs-success {
+        color: var(--success);
+        background-color: var(--success-bg);
+        border: 1px solid #bbf7d0;
+      }
+      .g2rs-warning {
+        color: var(--warning);
+        background-color: var(--warning-bg);
+        border: 1px solid #fecaca;
+      }
+      .g2rs-notice small {
+        display: block;
+        font-weight: 400;
+        margin-top: 4px;
+        font-size: 13px;
+        opacity: 0.9;
+      }
+      .section {
+        background-color: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 24px;
+        margin-bottom: 24px;
+      }
+      .section h2 {
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 10px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 24px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+      }
+      .field-full {
+        grid-column: 1 / -1;
+      }
+      .label { 
+        font-size: 12px;
+        color: var(--secondary);
+        font-weight: 500;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+      }
+      .value {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--primary);
+        word-break: break-word;
+      }
+      .footer { 
+        margin-top: 60px; 
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        display: flex;
+        justify-content: space-between;
+      }
+      .signature-block {
+        width: 300px;
+        text-align: center;
+      }
+      .stamp {
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        margin-bottom: 5px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .meta-info {
+        font-size: 11px;
+        color: #64748b;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <h1 class="header-title">SS04 Verification Form</h1>
+        <p class="header-subtitle">Google Financial Services Verification</p>
+      </div>
+      <div class="document-id">
+        <div>Registry: <strong>BaFin (DE)</strong></div>
+        <div>Date: <strong>2026-07-24</strong></div>
+      </div>
+    </div>
+    
+    
+    <div class="g2rs-notice g2rs-warning">
+      <div style="font-size: 20px;">⚠</div>
+      <div>
+        Warning: This organization may not hold the required primary financial licenses for G2RS.
+        <small>License status is not active.</small>
+      </div>
+    </div>
+    
+    
+    <div class="section">
+      <h2>1. Organization Details</h2>
+      <div class="grid">
+        <div class="field field-full">
+          <span class="label">Legal Name</span>
+          <span class="value">ABACUS Asset Management GmbH</span>
+        </div>
+        <div class="field">
+          <span class="label">BaFin-ID</span>
+          <span class="value">10126113</span>
+        </div>
+        <div class="field">
+          <span class="label">Register Number</span>
+          <span class="value">N/A</span>
+        </div>
+        <div class="field">
+          <span class="label">LEI (Legal Entity Identifier)</span>
+          <span class="value">N/A</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>2. Address & Contact</h2>
+      <div class="grid">
+        <div class="field field-full">
+          <span class="label">Registered Address</span>
+          <span class="value">Schleusenbrücke 1 / Neuer Wall 25,20354 Hamburg,Deutschland</span>
+        </div>
+        <div class="field">
+          <span class="label">Phone</span>
+          <span class="value">N/A</span>
+        </div>
+        <div class="field">
+          <span class="label">E-Mail</span>
+          <span class="value">N/A</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>3. Regulatory License (BaFin)</h2>
+      <div class="grid">
+        <div class="field field-full">
+          <span class="label">Authorized Activities (Art der Erlaubnis)</span>
+          <span class="value">Abschlußvermittlung (§ 1 Abs. 1a Satz 2 Nr. 2 KWG), Abschlussvermittlung (§ 2 Abs. 2 Nr. 5 WpIG), Anlagevermittlung (§ 1 Abs. 1a Satz 2 Nr. 1 KWG)...</span>
+        </div>
+        <div class="field">
+          <span class="label">License Status</span>
+          <span class="value" style="text-transform: capitalize;">erloschen</span>
+        </div>
+        <div class="field">
+          <span class="label">Granted Date</span>
+          <span class="value">31.03.2012</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h2>4. Verification Source</h2>
+      <div class="grid">
+        <div class="field field-full">
+          <span class="label">Source URL</span>
+          <span class="value" style="font-size: 12px; color: var(--accent);">https://portal.mvp.bafin.de/database/InstInfo/institutDetails.do?cmd=loadInstitutAction&institutId=126113</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="signature-block">
+        <div class="stamp">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
+            <!-- Base outline -->
+            <path d="M 19 37 L 22 12 L 42 20 A 36 36 0 0 1 58 20 L 78 12 L 81 37 A 36 36 0 1 1 19 37 Z" fill="#C2B29A" stroke="#000" stroke-width="6" stroke-linejoin="round" />
+            <!-- Left Ear Inner Pink -->
+            <path d="M 21 21 L 34 26 L 22 34 Z" fill="#F4C2C2" />
+            <!-- Left Ear Fold -->
+            <path d="M 22 12 L 42 20 L 30 32 Z" fill="#C2B29A" stroke="#000" stroke-width="4" stroke-linejoin="round" />
+            <!-- Eyes -->
+            <g stroke="#000" stroke-width="5" stroke-linecap="round">
+              <path d="M 32 45 L 42 55 M 42 45 L 32 55" />
+              <path d="M 58 45 L 68 55 M 68 45 L 58 55" />
+            </g>
+            <!-- Nose -->
+            <path d="M 45 62 Q 50 58 55 62 Q 55 68 50 70 Q 45 68 45 62 Z" fill="#000" />
+            <!-- Mouth -->
+            <path d="M 42 75 L 50 68 L 58 75" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+            <!-- Whiskers -->
+            <g stroke="#000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <path d="M 16 62 L 5 66" />
+              <path d="M 22 72 L 12 77 L 17 82" />
+              <path d="M 30 85 L 20 90 L 25 95" />
+              <path d="M 84 62 L 95 66" />
+              <path d="M 78 72 L 88 77 L 83 82" />
+              <path d="M 70 85 L 80 90 L 75 95" />
+            </g>
+          </svg>
+        </div>
+        <div class="label">Made by EEthugzz</div>
+      </div>
+      <div class="meta-info">
+        <div>Generated: 2026-07-24 12:20:56 UTC</div>
+        <div>Automated BaFin Parser Engine</div>
+      </div>
+    </div>
+  </body>
+</html>

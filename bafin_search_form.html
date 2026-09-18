@@ -1,0 +1,106 @@
+<form action="sucheForm.do" id="sucheFormInstitut" method="get">
+<div class="navigationBlockSuche">
+<div class="navigationGruppeSuchkriterien">
+<label accesskey="U" for="institutName">Unternehmen:</label>
+<input class="text" id="institutName" maxlength="100" name="institutName" onfocus="document.querySelectorAll('#sucheFormSchlichtungsstelle input[type=text]').forEach(e =&gt; e.value = '')" type="text" value=""/>
+<!-- BAFIN ID -->
+<label accesskey="I" for="institutId">BaFin-ID:</label>
+<input class="text" id="institutId" maxlength="10" name="institutId" onfocus="document.querySelectorAll('#sucheFormSchlichtungsstelle input[type=text]').forEach(e =&gt; e.value = '')" type="text" value=""/>
+<!-- BAKIS -->
+<label accesskey="I" for="institutBakNr">Bak Nr:</label>
+<input class="text" id="institutBakNr" maxlength="10" name="institutBakNr" onfocus="document.querySelectorAll('#sucheFormSchlichtungsstelle input[type=text]').forEach(e =&gt; e.value = '')" type="text" value=""/>
+<!-- REGNR -->
+<label accesskey="I" for="institutRegNr">Reg Nr:</label>
+<input class="text" maxlength="10" name="institutRegNr" onfocus="document.querySelectorAll('#sucheFormSchlichtungsstelle input[type=text]').forEach(e =&gt; e.value = '')" type="text" value=""/>
+<label accesskey="K" for="institutKategorie">Kategorie:</label>
+<select class="wide" id="institutKategorie" name="kategorieId" onfocus="document.querySelectorAll('#sucheFormSchlichtungsstelle input[type=text]').forEach(e =&gt; e.value = '')"><option value=""></option><option value="10">Alle Unternehmen</option><option value="20">Alle Institute</option><option value="30">Kreditinstitute (BA)</option><option value="40">Leasing-/Factoringinstitute (BA)</option><option value="50">Finanzdienstleistungsinstitute (BA)</option><option value="60">Kapitalverwaltungsgesellschaften</option><option value="70">Kreditdienstleistungsinstitute (BA)</option><option value="80">Extern verwaltete Investmentgesellschaften</option><option value="90">Zweigstellen/-niederlassungen (BA)</option><option value="100">Wertpapierinstitute (BA)</option><option value="110">EWR-Kreditinstitute (BA)</option><option value="115">Grenzüberschreitende Dienstleister</option><option value="120">EU-Verwaltungsgesellschaften</option><option value="130">Zweigniederlassungen von EU-Verwaltungsgesellschaften</option><option value="140">Repräsentanzen (BA)</option><option value="145">MiCAR Emittenten</option><option value="150">Datenbereitstellungsdienste (BA)</option><option value="155">Finanzholding-Gesellschaften</option><option value="160">Kryptowertpapierregisterführer (BA)</option><option value="170">Kryptoverwahrer (BA)</option><option value="175">Kryptowerte-Dienstleister</option><option value="180">Freigestellte Unternehmen (BA)</option><option value="190">Alle Versicherer/Pensionsfonds</option><option value="200">Lebensversicherer (VA)</option><option value="210">Krankenversicherer (VA)</option><option value="220">Schaden-/Unfallversicherer (VA)</option><option value="230">Pensionsfonds (VA)</option><option value="240">Pensionskassen (VA)</option><option value="250">Sterbekassen (VA)</option><option value="260">Rückversicherer (VA)</option><option value="270">EWR-Dienstleister (VA)</option><option value="280">EWR-Niederlassungen (VA)</option><option value="290">Versicherungsunternehmen und Pensionsfonds</option><option value="300">Versicherer ohne Geschäftstätigkeit</option></select>
+</div>
+<!--
+-->
+<input class="submit" id="sucheButtonInstitut" name="sucheButtonInstitut" type="submit" value="Suche"/>
+<div class="navigationGruppeBuchstaben">
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=A">
+<span class="buchstabengruppe">A</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=B">
+<span class="buchstabengruppe">B</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=C">
+<span class="buchstabengruppe">C</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=D">
+<span class="buchstabengruppe">D</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=E">
+<span class="buchstabengruppe">E</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=F">
+<span class="buchstabengruppe">F</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=G">
+<span class="buchstabengruppe">G</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=H">
+<span class="buchstabengruppe">H</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=I">
+<span class="buchstabengruppe">I</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=J">
+<span class="buchstabengruppe">J</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=K">
+<span class="buchstabengruppe">K</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=L">
+<span class="buchstabengruppe">L</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=M">
+<span class="buchstabengruppe">M</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=N">
+<span class="buchstabengruppe">N</span>
+</a>
+<br/>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=O">
+<span class="buchstabengruppe">O</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=P">
+<span class="buchstabengruppe">P</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=Q">
+<span class="buchstabengruppe">Q</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=R">
+<span class="buchstabengruppe">R</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=S">
+<span class="buchstabengruppe">S</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=T">
+<span class="buchstabengruppe">T</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=U">
+<span class="buchstabengruppe">U</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=V">
+<span class="buchstabengruppe">V</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=W">
+<span class="buchstabengruppe">W</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=X">
+<span class="buchstabengruppe">X</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=Y">
+<span class="buchstabengruppe">Y</span>
+</a>
+<a href="/database/InstInfo/sucheForm.do?sucheButtonInstitut=Suche&amp;institutName=Z">
+<span class="buchstabengruppe">Z</span>
+</a>
+<br/>
+<a href="/database/InstInfo/sucheForm.do?sondersucheInstitut=true">
+<span class="buchstabengruppe">Sonstige</span>
+</a>
+</div>
+</div><!-- #navigationBlockSuche --></form>
